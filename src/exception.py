@@ -1,6 +1,6 @@
 import sys
-import logging
-
+# import logging
+from src.logger import logging
 
 def error_message_details(error,error_detail:sys):
 
@@ -29,12 +29,12 @@ class CustomeException(Exception):
         return self.error_message
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    try:
-        a=1/0
+#     try:
+#         a=1/0
 
-    except Exception as e:  
+#     except Exception as e:  
 
-        logging.info("Devide by Zero Error")
-        raise CustomeException(e,sys)
+#         logging.error("Devide by Zero Error")
+#         raise CustomeException(e,sys)
